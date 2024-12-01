@@ -1,0 +1,62 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.home-icon {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.new-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.new-button:hover {
+  background-color: #0056b3;
+}
+
+.loans-table {
+  width: 90%; /* Reduced table width */
+  margin: 0 auto; /* Center align the table */
+  border-collapse: collapse;
+}
+
+.loans-table th,
+.loans-table td {
+  border: 1px solid #ddd;
+  padding: 6px; /* Reduced padding for more compact cells */
+  text-align: left;
+  font-size: 14px; /* Adjusted font size for compactness */
+}
+
+.loans-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.loans-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.loans-table tr:hover {
+  background-color: #f1f1f1;
+}
+.search-input {
+  width: 300px; /* Adjust width as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  position: absolute;
+  top: -1%;
+  right: 43%;
+}

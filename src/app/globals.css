@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Root and Scrollbar Customization */
+:root {
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9a9a9a;
+}
+
+/* General Section Styling */
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* List Styling */
+.list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  list-style: none;
+}
+
+/* Icon Container */
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 60px 40px 40px;
+  background-color: rgba(240, 233, 233, 0.288);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-container:hover {
+  background-color: rgba(240, 233, 233, 0.5);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
+/* Loans Section */
+.loans-section {
+  position: relative;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.fa-long-arrow-alt-left {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 40px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.fa-long-arrow-alt-left:hover {
+  color: #007bff;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.loan-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.loan-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.loan-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.loan-header span,
+.loan-item span {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loan-item span:nth-child(3),
+.loan-item span:nth-child(5) {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Button Styling */
+.button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #212121;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+  background-color: #000000;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button .text {
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+/* Form Styling */
+.form-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.form-header h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.form-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-field input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.form-field input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.submit-button:active {
+  background-color: #3e8e41;
+  transform: scale(0.98);
+}
